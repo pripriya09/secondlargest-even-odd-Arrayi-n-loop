@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+     const numbers=[10,20,30,40,50]
+    let largest = 0, 
+    secondLargest = 0;
+    for(let i=0; i<numbers.length;i++){
+
+        
+    if(numbers[i]>largest){
+        secondLargest = largest;
+        largest = numbers[i];
+    }
+    else if(numbers[i]<largest && numbers[i]>secondLargest){
+        secondLargest = numbers[i];
+    }
+    }
+    if(secondLargest!==0){
+    console.log({secondLargest});
+    }
+    else{
+     console.log("Second largest element doesn't exist.");
+        }
+
+// ----------------------------------------------------------------------------------
+const num1=[3,4,5,6,7];
+const num2=[1,2,3,4,5];
+
+let Evennum11=[];
+let Oddnum22=[];
+for(i=0;i<num1.length;i++){
+  if(i%2 === 0){
+    Evennum11.push(num1[i]+num2[i])
+  }
+  else{
+    Oddnum22.push(num1[i]+num2[i])
+  }
+}
+console.log(Evennum11);
+console.log(Oddnum22);
+
+
+
+
+
+
+
+
+</script>
